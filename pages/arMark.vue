@@ -1,24 +1,14 @@
 <template>
-	<div class="try-it">
+  <div class="try-it">
 		<section class="try-it__inside">
-			<nuxt-link to="arMark">По метке</nuxt-link>
-			<nuxt-link to="arGeo">По геопозиции</nuxt-link>
-			<nuxt-link to="arImg">По картинке</nuxt-link>
+			<iframe src="/arMetk.html" frameborder="0" class="try-it__iframe"></iframe>
 		</section>
 	</div>
 </template>
 
 <script>
 export default {
-	name: 'TryIt',
-
-	data() {
-		return {}
-	},
-
-	mounted() {
-		
-	}
+    name: 'arMark',
 }
 </script>
 
