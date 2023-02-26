@@ -1,0 +1,85 @@
+@mixin h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+@mixin h2 {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 54px;
+}
+
+@mixin h3-36 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+@mixin h3 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+@mixin text-bg {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+@mixin text-md {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+@mixin text-sm {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@mixin text-sm-2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+@mixin text-lt {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+@mixin slide-up($delay) {
+    animation-name: slide-up;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    animation-delay: $delay;
+    transform: translateY(50%);
+    opacity: 0;
+
+    @keyframes slide-up {
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+@mixin slide-right($delay) {
+    animation-name: slide-right;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    animation-delay: $delay;
+    transform: translatex(-50%);
+    opacity: 0;
+
+    @keyframes slide-right {
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
