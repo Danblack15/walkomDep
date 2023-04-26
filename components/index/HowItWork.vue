@@ -6,13 +6,13 @@
 			<div class="how-work__wrapper-body">
 				<section class="how-work__body">
 					<div class="how-work__item">
-						<img src="/img/ears.png" alt="солёные уши" class="how-work__item-img" />
+						<img src="img/ears.png" alt="солёные уши" class="how-work__item-img" />
 
 						<div class="how-work__item-info">
 							<h3 class="how-work__item-title">Наведи камеру</h3>
 							<p class="how-work__item-text">Наводим камеру телефона на объект культуры сайта www.нашсайт.ru
 							</p>
-							<LinkUI link="TryIt" class="how-work__item-link">Попробуй!</LinkUI>
+							<LinkUI link="/TryIt" class="how-work__item-link">Попробуй!</LinkUI>
 						</div>
 					</div>
 
@@ -23,11 +23,11 @@
 								камеры</p>
 						</div>
 
-						<img src="/img/ears.png" alt="солёные уши" class="how-work__item-img" />
+						<img src="img/ears.png" alt="солёные уши" class="how-work__item-img" />
 					</div>
 
 					<div class="how-work__item">
-						<img src="/img/beer.png" alt="пермский медведь"
+						<img src="img/beer.png" alt="пермский медведь"
 							class="how-work__item-img how-work__item-img--beer" />
 
 						<div class="how-work__item-info">
@@ -35,7 +35,7 @@
 							<p class="how-work__item-text">Как только система распознала объект, она накладывает элементы
 								дополненной
 								реальности на реальные объекты</p>
-							<LinkUI link="TryIt" class="how-work__item-link">Попробуй!</LinkUI>
+							<LinkUI link="/TryIt" class="how-work__item-link">Попробуй!</LinkUI>
 						</div>
 					</div>
 				</section>

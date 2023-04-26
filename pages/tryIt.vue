@@ -1,37 +1,34 @@
 <template>
 	<div class="try-it">
 		<section class="try-it__inside">
-			<nuxt-link to="arMark">По метке</nuxt-link>
-			<nuxt-link to="arGeo">По геопозиции</nuxt-link>
-			<nuxt-link to="arImg">По картинке</nuxt-link>
+			<mapTryIt />
 		</section>
 	</div>
 </template>
 
 <script>
+import mapTryIt from '~/components/tryIt/mapTryIt'
+
 export default {
 	name: 'TryIt',
+	layout: 'arLayout',
+
+	components: {
+		mapTryIt
+	},
 
 	data() {
 		return {}
 	},
 
-	mounted() {
-		
-	}
+	methods: {},
 }
 </script>
 
 <style lang="scss" scoped>
 .try-it {
 	&__inside {
-		padding-top: 100px;
-		height: 100vh;
-	}
-
-	&__iframe {
-		width: 100%;
-		height: 100%;
+		height: calc(100vh - 100px);
 	}
 }
 </style>

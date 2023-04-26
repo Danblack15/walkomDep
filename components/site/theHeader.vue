@@ -1,10 +1,10 @@
 <template>
 	<header class="header">
 		<section class="wrapper header__inside">
-			<img src="/img/icons/logo-nb.svg" class="header__logo" @click="$router.push('/')"/>
+			<img src="img/icons/logo-nb.svg" class="header__logo" @click="$router.push('/')"/>
 
 			<nuxt-link to="/login" class="header__auth">
-				<img src="/img/icons/user.svg" alt="войти" class="header__auth-icon" />
+				<img src="img/icons/user.svg" alt="войти" class="header__auth-icon" />
 				<p class="header__auth-text">Войти</p>
 			</nuxt-link>
 		</section>

@@ -2,7 +2,7 @@
 	<div class="excursion">
 		<div class="excursion__img-wrapper">
 			<img 
-				:src="excursion.image" 
+				src="https://cdn.tripster.ru/thumbs2/53a4f5d4-08c5-11eb-ab6c-be2c449e3dcd.800x600.jpg" 
 				alt="фото экскурсии" 
 				class="excursion__img" 
 			/>
@@ -12,8 +12,8 @@
 		</div>
 
 		<div class="excursion__info">
-			<p class="excursion__title">{{ excursion.title }}</p>
-			<p class="excursion__subtitle">{{ excursion.desc }}</p>
+			<p class="excursion__title">{{ excursion.name }}</p>
+			<p class="excursion__subtitle">{{ excursion.description }}</p>
 		</div>
 	</div>
 </template>
@@ -26,8 +26,8 @@ export default {
 			default() {
 				return {
 					image: 'https://cdn.tripster.ru/thumbs2/53a4f5d4-08c5-11eb-ab6c-be2c449e3dcd.800x600.jpg',
-					title: 'О Перми — с интересом и любовью',
-					desc: 'Получить объемное впечатление о городе, познакомиться с его историей и послушать пермские легенды'
+					name: 'О Перми — с интересом и любовью',
+					description: 'Получить объемное впечатление о городе, познакомиться с его историей и послушать пермские легенды'
 				}
 			}
 		}

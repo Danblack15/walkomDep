@@ -22,11 +22,11 @@ export default {
 
 	methods: {
 		iconLink() {
-			return `/img/icons/${this.name}.svg`
+			return `img/icons/${this.name}.svg`
 		},
 
 		iconReservLink() {
-			return `/img/iconsReserve/${this.name}.png`
+			return `img/iconsReserve/${this.name}.png`
 		}
 	}
 }

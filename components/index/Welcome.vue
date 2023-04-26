@@ -9,7 +9,7 @@
 			Ваше путешествие при помощи<br/>
 			<span class="bold-600 welcome__subtitle--green">дополненной реальности</span>
 		</h3>
-		<ButtonUI link="/login" class="welcome__btn">Начать</ButtonUI>
+		<ButtonUI link="/tryIt" class="welcome__btn">Начать</ButtonUI>
 
 		<img src="/img/icons/arrow.svg" alt="стрелка вниз" class="welcome__arrow" />
 	</div>

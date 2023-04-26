@@ -2,11 +2,11 @@
 	<div class="excurs-slider swiper">
 		<div class="swiper-wrapper excurs-slider__wrapper">
 			<div 
-				v-for="i of 10" 
-				:key="i" 
+				v-for="excursion in excursions" 
+				:key="excursion.id" 
 				class="swiper-slide excurs-slider__slide"
 			>
-				<ExcursionUI class="excurs-slider__item" />
+				<ExcursionUI class="excurs-slider__item" :excursion="excursion" />
 			</div>
 		</div>
 
@@ -26,7 +26,9 @@ import Swiper, { Navigation } from 'swiper'
 import 'swiper/swiper.scss'
 import 'swiper/components/navigation/navigation.scss'
 
-import ExcursionUI from '~/components/ui/ExcursionUI'
+import ExcursionUI from '~/components/ui/ExcursionUI' 
+
+import {mapGetters, mapActions} from "vuex";
 
 Swiper.use([Navigation])
 export default {
@@ -34,7 +36,9 @@ export default {
 		ExcursionUI
 	},
 
-	mounted() {
+	async mounted() {
+		await this.fetchExcursions()
+
 		const excursionsSlider = new Swiper('.excurs-slider', {
 			slidesPerView: 1.1,
 			spaceBetween: 10,
@@ -46,22 +50,36 @@ export default {
 			},
 			breakpoints: {
 				768: {
-					slidesPerView: 2.1,
+					slidesPerView: 2.1
 				},
 				992: {
 					slidesPerView: 2.5,
 					spaceBetween: 30,
-					allowTouchMove: false,
+					allowTouchMove: false
 				},
 				1440: {
-					slidesPerView: 3.5
+					slidesPerView: 3.5,
+					allowTouchMove: false
 				},
 				1600: {
 					slidesPerView: 3.5,
 					spaceBetween: 50,
-					allowTouchMove: false,
+					allowTouchMove: false
 				}
 			}
+		})
+		
+	},
+
+	methods: {
+		...mapActions({
+			fetchExcursions: "excursions/fetchExcursions"
+		})
+	},
+
+	computed: {
+		...mapGetters({
+			excursions: "excursions/getExcursions"
 		})
 	},
 
